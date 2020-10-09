@@ -7,6 +7,7 @@ section '.data' data readable writable
 
         strVecSize   db 'size of vector = ', 0
         strIncorSize db 'Incorrect size of vector = %d', 10, 0
+        strCountOfPositive db 'Positive numbers = %d', 10 ,0
         strVecElemI  db 'vector[%d] =  ', 0
         strScanInt   db '%d', 0
         strSumValue  db 'Summa = %d', 10, 0
@@ -116,7 +117,7 @@ itsFalse:
 endInputVector:
 
         push dword [positive_count]
-        push strIncorSize
+        push strCountOfPositive
         call [printf]
 
 
