@@ -1,0 +1,1 @@
+# exe файл взял из проекта visual studio
